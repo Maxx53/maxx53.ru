@@ -1,0 +1,55 @@
+html,body{
+  height:99%;
+}
+
+@font-face {
+    font-family: 'DosVGA';
+    src: url('dosvga.ttf');
+}
+
+body{
+  background: #000082;
+  color: #FAFAFC;
+  font-family: 'DosVGA';
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.wrapper{
+    top: 35%;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.highlight{
+     color: #000082;
+     width:150px;
+     margin:0 auto;
+	 text-align: center; 
+     background-color:#FAFAFC;
+}
+.anykey{
+	 text-align: center;
+
+}
+.item::before {
+	content: "* ";
+}
+
+a:link {
+	color: #FAFAFC;
+	text-decoration: none
+}
+
+a:visited {
+   	color: #FAFAFC;
+	text-decoration: none
+}
+
+a:hover {
+    background-color: #FAFAFC;
+	color: #000082;
+	text-decoration: none
+}
+
