@@ -1,13 +1,13 @@
-html,body{
-  height:99%;
+html,body {
+  height: 99%;
 }
 
 @font-face {
-    font-family: 'DosVGA';
+  font-family: 'DosVGA';
     src: url('dosvga.ttf');
 }
 
-body{
+body {
   background: #000082;
   color: #FAFAFC;
   font-family: 'DosVGA';
@@ -15,61 +15,71 @@ body{
   line-height: 20px;
 }
 
-.wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.highlight{
-     color: #000082;
-     width:150px;
-     margin:0 auto;
-	 text-align: center; 
-     background-color:#FAFAFC;
+.highlight {
+  color: #000082;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FAFAFC;
 }
-.anykey{
-	 text-align: center;
 
+.anykey {
+  text-align: center;
 }
+
 .item::before {
-	content: "* ";
+  content: "* ";
 }
 
 a:link {
-	color: #FAFAFC;
-	text-decoration: none
+  color: #FAFAFC;
+  text-decoration: none;
 }
 
 a:visited {
-   	color: #FAFAFC;
-	text-decoration: none
+  color: #FAFAFC;
+  text-decoration: none;
 }
 
 a:hover {
-    background-color: #FAFAFC;
-	color: #000082;
-	text-decoration: none
+  background-color: #FAFAFC;
+  color: #000082;
+  text-decoration: none;
 }
 
 .cursor {
   animation: blinker steps(1) 200ms infinite alternate;
+  display: inline;
 }
 
-@keyframes blinker {  
-  0% { visibility: visible; }
-  50% { visibility: hidden; }
-  100% { visibility: visible; }
+@keyframes blinker {
+  
+  0% {
+    visibility: visible;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
 }
 
 .noselect {
-    cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
